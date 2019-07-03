@@ -32,6 +32,7 @@
 
     <properties>
         <example.version>1.0</example.version>
+        <example.list>1.0</example.list>
     </properties>
     <dependencies>
         <dependency>
@@ -40,12 +41,23 @@
             <version>1.0</version>
         </dependency>
         <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.ivy.example</groupId>
             <artifactId>version</artifactId>
             <version>${example.version}</version>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>org.apache.ivy.example</groupId>
+            <artifactId>list</artifactId>
+            <version>${example.list}</version>
+        </dependency>
 
+
+    </dependencies>
     <build>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
